@@ -7,7 +7,7 @@ const imagemin = require('gulp-imagemin');
 gulp.task('sass' , () =>{
   return gulp.src('./app/sass/main.scss')
   .pipe(sourcemaps.init())
-  .pipe(sass({outputStyle: 'nested' }))
+  .pipe(sass({outputStyle: 'compressed' }))
   .pipe(autoprefixer({
     browsers: ['last 2 version'],
     cascade: false
@@ -17,7 +17,7 @@ gulp.task('sass' , () =>{
 });
 
 gulp.task('watch', () => {
-  gulp.watch('./app/sass/*.scss', ['sass'])
+  gulp.watch('./app/sass/*/*.scss', ['sass'])
 });
 
 gulp.task('imagemin', () =>{
