@@ -1,0 +1,40 @@
+.introduction{
+  display: flex;
+  flex-direction: column;
+
+  &__image{
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+
+    &-item{
+      display: block;
+      margin: 0 auto;
+      width: 250px;
+    }
+  }
+
+  &__description{
+
+    &-paragraph{
+    color: $main_color_dark;
+    text-align: justify;
+    font: 500 20px/28px $main-font;
+    }
+  }
+}
+
+@media all and (min-width :$md-min){
+  .introduction{
+    flex-direction: row;
+
+    &__image{
+      width: 50%;
+    }
+
+    &__descrition{
+      width: 50%;
+    }
+  }
+
+}
