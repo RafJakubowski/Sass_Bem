@@ -21,6 +21,9 @@
     text-align: justify;
     font: 500 20px/28px $main-font;
     }
+    &-button{
+      @include button(50%, 35px auto, 30px, 30px);
+    }
   }
 }
 
