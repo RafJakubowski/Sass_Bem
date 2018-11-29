@@ -1,0 +1,18 @@
+.pros-cons{
+  position: relative
+}
+.pros {
+
+  &__background-container {
+    background: url("../images/pros.png") center/contain no-repeat;
+    animation: rotate-background 5s linear infinite;
+  }
+}
+
+.cons {
+
+  &__background-container {
+    background: url("../images/cons.png") center/contain no-repeat;
+    animation: rotate-background-reverse 5s linear infinite;
+  }
+}
